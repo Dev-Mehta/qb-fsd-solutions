@@ -1,0 +1,55 @@
+<!-- Write an HTML script using bootstrap to design a page of 
+newspaper having three articles by showing only titles 
+initially. Script should enable a render to open a particular 
+article viewing and clicking its title and close it by clicking 
+it again. If render opens any other article, then previous 
+article should disappear  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+    <div class="container my-4">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#a1" class="card-link" data-bs-toggle="collapse">LIC to buy 9.99% stake in HDFC Bank</a>
+                </div>
+            </div>
+            <div id="a1" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <p>Dono mei loss hoga</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#a2" class="card-link" data-bs-toggle="collapse">Stocks to Watch: Zuari Agrochemicals, Rajshree Sugar, Gulf Petroleum</a>
+                </div>
+            </div>
+            <div id="a2" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <p>Keep watching</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="#a3" class="card-link" data-bs-toggle="collapse">Infibeam rallies 25% in a week. Here are the reasons</a>
+                </div>
+            </div>
+            <div id="a3" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    <p>I sold them.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

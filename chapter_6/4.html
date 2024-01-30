@@ -1,0 +1,34 @@
+<!-- Write a script using HTML/CSS using Bootstrap to create 
+two sections of 30% and 70% width. First section has 
+parameters with different color indications and show 
+progress-bar in specific color only with random progress. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="" style="width: 30% !important;">
+                <p></p>
+                <p><button class="btn btn-primary">In Progress</button></p>
+                <p><button class="btn btn-danger">Started</button></p>
+                <p><button class="btn btn-warning">Half Done</button></p>
+                <p><button class="btn btn-success">Done Successfully</button></p>
+            </div>
+            <div class="" style="width: 70% !important;">
+                <p></p>
+                <p class="progress bg-primary text-white px-1" style="width: 10%;">Starting</p>
+                <p class="progress bg-danger text-white px-1" style="width: 10%;">10%</p>
+                <p class="progress bg-warning text-white px-1" style="width: 50%;">50%</p>
+                <p class="progress bg-success text-white px-1" style="width: 100%;">100%</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
